@@ -1,0 +1,28 @@
+/* css */
+#main_header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-h);
+  z-index: 50;
+}
+#main_header .wrap {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#main_header .wrap .burger_btn {
+  padding: 15px;
+}
+#main_header .wrap .phone {
+  font-family: var(--amiri-regular);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--white);
+  margin: 12px 14px;
+}

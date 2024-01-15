@@ -1,0 +1,17 @@
+.swiper-pagination {
+  width: 50% !important;
+  min-width: 50% !important;
+  margin: 0 25%;
+  transform: translate(0, -20px);
+  z-index: 12;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-horizontal-gap: 3px;
+  background: var(--white) !important;
+  transform: scale(0.7) !important;
+  opacity: 1 !important;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap);
+}
+.swiper-pagination-bullet-active {
+  transform: scale(1.2) !important;
+}

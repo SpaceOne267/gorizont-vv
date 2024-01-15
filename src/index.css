@@ -1,0 +1,176 @@
+/* fonts */
+/* Define the font faces */
+
+@font-face {
+  font-family: "Amiri-Bold";
+  src: url("assets/fonts/Amiri/Amiri-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Amiri-BoldItalic";
+  src: url("assets/fonts/Amiri/Amiri-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Amiri-Italic";
+  src: url("assets/fonts/Amiri/Amiri-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Amiri-Regular";
+  src: url("assets/fonts/Amiri/Amiri-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/* root global variables */
+:root {
+  --white: #fff;
+  --white05: #fff5;
+  --white-smoke: #f5f5f5;
+  --alice-blue: #f7f8fb;
+  --slate-blue: #93a0b1;
+  --silver-blue: #eaedf0;
+  --blue: #4c90e8;
+  --blue05: #4c90e850;
+  --blue-1: #1f3b60;
+  --blue-1_09: #1f3b60d1;
+  --blue-linear: linear-gradient(#16507a, var(--blue-1));
+  --silver: #c3c7cd;
+  --gray-1: #7e7b78;
+  --gray-pale: #dee3ea;
+  --gray-slate: #5b6676;
+
+  --bg-linear-1: linear-gradient(#fbfbfb, var(--gray-pale));
+
+  /* Fonts */
+  --montserrat: "Montserrat";
+  /* - */
+  --amiri-regular: "Amiri-Regular", sans-serif;
+  --amiri-bold: "Amiri-Bold", sans-serif;
+  --amiri-bold-italic: "Amiri-BoldItalic", sans-serif;
+  --amiri-italic: "Amiri-Italic", sans-serif;
+  /* - */
+  --bona-nova: "Bona Nova", sans-serif;
+
+  /* base sizes */
+  --header-h: 45px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--white-smoke);
+  font: 400 15px var(--montserrat);
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+strong {
+  font-weight: 600;
+}
+button {
+  border: none;
+  background: transparent;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+input,
+textarea {
+  border: none;
+}
+img {
+  all: inherit;
+  overflow: clip !important;
+  overflow-clip-margin: content-box;
+}
+iframe {
+  user-select: none;
+}
+/* custom styled classes */
+
+#preloader {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: var(--blue-1);
+}
+#preloader .title {
+  color: var(--white);
+  text-transform: uppercase;
+  font: 400 20px var(--amiri-bold);
+}
+#preloader .title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top: 10px solid var(--white);
+  border-bottom: 10px solid var(--white);
+}
+.preloader_active {
+  display: flex !important;
+}
+.preloader_active .title::before {
+  animation: preloading 2s infinite;
+}
+@keyframes preloading {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* / */
+.container {
+  display: block;
+  position: relative;
+  max-width: 393px;
+  margin: 0 auto;
+  clear: both;
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.block {
+  display: block;
+  width: 100%;
+}

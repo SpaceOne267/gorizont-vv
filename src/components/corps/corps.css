@@ -1,0 +1,33 @@
+#corps_select {
+  --bg: #eff0f2;
+  --bg-active: #edf4ff;
+  --stroke: #c3c7cd;
+  --color-active: #4092ff;
+  --color: #8a929c;
+}
+#corps_select .corp:nth-child(1) {
+  fill: var(--bg);
+}
+#corps_select .corp:hover :nth-child(2) {
+  stroke: var(--stroke);
+}
+
+#corps_select .corp:hover :nth-child(3) {
+  fill: var(--color);
+}
+#corps_select .corp {
+  cursor: pointer;
+}
+
+#corps_select .corp:hover :nth-child(1),
+#corps_select .selected :nth-child(1) {
+  fill: var(--bg-active) !important;
+}
+#corps_select .corp:hover :nth-child(2),
+#corps_select .selected :nth-child(2) {
+  stroke: var(--color-active) !important;
+}
+#corps_select .corp:hover :nth-child(3),
+#corps_select .selected :nth-child(3) {
+  fill: var(--color-active) !important;
+}

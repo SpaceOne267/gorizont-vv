@@ -1,0 +1,116 @@
+@media screen and (max-width: 350px) {
+  .main_page .discover .tabs_container .tabs li .content .title {
+    margin-bottom: 12px;
+  }
+  .main_page .choose .wrap .tab_slider .slide .step2 {
+    width: 98% !important;
+  }
+  .main_page .choose .wrap .tab_slider .steps .tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main_page .choose .wrap .tab_slider .steps .tabs .btn {
+    padding: 10px !important;
+  }
+  .main_page .overview {
+    margin-bottom: 150px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main_page .location .section_title {
+    top: -40px !important;
+  }
+  .main_page .overview {
+    margin-bottom: 110px;
+    padding-bottom: 30px;
+  }
+  .main_page .discover .tabs_container .tabs li .content .subtext {
+    width: 100% !important;
+  }
+  .main_page .info .content {
+    padding-bottom: 10px !important;
+  }
+  .main_page .info .content .btn {
+    width: 92% !important;
+    margin: 0 auto !important;
+  }
+  .main_page .info::before {
+    height: 106% !important;
+    top: -12% !important;
+  }
+  .main_page .info .section_title {
+    top: -100px !important;
+  }
+  .main_page .info .content {
+    padding: 20px !important;
+    padding-top: 0 !important;
+  }
+  .main_page .info .content .text {
+    padding: 0 10px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_page .overview {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 380px) {
+  .container {
+    max-width: 500px !important;
+  }
+  .main_page .location .section_title {
+    margin-top: -40px !important;
+  }
+  .main_page .location .wrap .map .f0,
+  #contacts .map .flags .f0 {
+    bottom: 285px !important;
+    left: 114px;
+  }
+  .main_page .location .wrap .map .flags .crc,
+  #contacts .map .flags .crc {
+    left: 104px;
+    bottom: 265px !important;
+  }
+}
+@media screen and (min-width: 420px) {
+  .main_page .overview {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 800px) {
+  header,
+  .mobile {
+    display: none !important;
+  }
+  .pc {
+    display: block !important;
+  }
+  .pc .swiper .swiper-slide img {
+    aspect-ratio: 2/3 !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header,
+  .mobile {
+    display: none !important;
+  }
+  .pc {
+    display: block !important;
+  }
+  .pc .swiper .swiper-slide img {
+    aspect-ratio: 2/3 !important;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .pc .swiper .swiper-slide img {
+    aspect-ratio: 1/1 !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pc .swiper .swiper-slide img {
+    aspect-ratio: 3/2 !important;
+  }
+}
